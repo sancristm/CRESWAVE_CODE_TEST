@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 //mapping a user class to a table
 @Entity //for Hibernate
-@Table(name = "usersDetails")
+@Table(name = "Credentials")
 public class user{
     @Id
     @SequenceGenerator(
@@ -66,6 +66,16 @@ public class user{
 
     public String getPassword() {
         return password;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setUsername(String name) {
+        this.name = name;
+    }
+    public void setEmail(String name) {
+        this.name = name;
     }
 
     @Override
