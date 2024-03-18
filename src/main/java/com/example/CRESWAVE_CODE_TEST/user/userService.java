@@ -24,15 +24,15 @@ public class userService {
 
 
     }
-    //vallidations || conditions BASIC
+    //validations || conditions BASIC
     public void addNewUser(user user){
        Optional<user> userOptional=userRepository.findUserByEmail(user.getEmail());
        if(userOptional.isPresent()){
-           throw new IllegalStateException(" user already exists");
+           throw new IllegalStateException(" user already exists with that email address");
        }
        userRepository.save(user);
 
-        //System.out.println(user);
+       System.out.println(user);
 
     }
 

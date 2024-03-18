@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 //mapping a user class to a table
 @Entity //for Hibernate
-@Table(name = "usersDetails")
+@Table(name = "Credentials")
 public class user{
     @Id
     @SequenceGenerator(
