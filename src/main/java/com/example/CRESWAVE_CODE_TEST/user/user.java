@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 //mapping a user class to a table
 @Entity //for Hibernate
-@Table
+@Table(name = "usersDetails")
 public class user{
     @Id
     @SequenceGenerator(
@@ -16,28 +16,44 @@ public class user{
             strategy = GenerationType.SEQUENCE,
             generator = "user_sequence"
     )
-private Long id;
-private String username;
-private String email;
-
-private String password;
 
 
-    public user(Long id, String username, String email, String password) {
+    private Long id;
+    private String name;
+    private  String username;
+    private String email;
+    private String password;
+
+    public user(){
+
+    }
+
+
+
+    public user  (Long id, String name, String username, String email, String password)
+    {
         this.id = id;
+        this.name= name;
         this.username = username;
         this.email = email;
         this.password = password;
     }
 
-    public user(Long id, String username, String email) {
-        this.id = id;
+    public user(String name, String username, String email, String password) {
+
+        this.name= name;
         this.username = username;
         this.email = email;
+        this.password =password;
     }
 
     public Long getId() {
         return id;
+    }
+
+
+    public String getName() {
+        return name;
     }
 
     public String getUsername() {
@@ -55,7 +71,8 @@ private String password;
     @Override
     public String toString() {
         return "user{" +
-                "id=" + id +
+                "name='" + name + '\'' +
+                ", id=" + id +
                 ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
