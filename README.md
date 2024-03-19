@@ -1,16 +1,20 @@
 Blogging Platform
 <br>
 A RESTful API for a blogging platform built with Java and Spring Boot.
+<br>
 
 Table of Contents
+<br>
 Introduction
+<br>
+
 Features
-Technologies Used
-Setup
-Usage
-API Endpoints
-Contributing
-License
+<br>Technologies Used
+<br>Setup
+<br>Usage
+<br>API Endpoints
+<br>Contributing
+<br>License
 Introduction
 This project is a blogging platform that provides users with the ability to register, login, manage their profiles, create, read, update, and delete blog posts, comment on blog posts, and perform search functionality to search for blog posts by title or content. It also implements role-based access control (RBAC) where only authorized users can perform certain actions.
 
