@@ -1,5 +1,5 @@
 Blogging Platform
-##A RESTful API for a blogging platform built with Java and Spring Boot.
+#A RESTful API for a blogging platform built with Java and Spring Boot.
 
 ##Table of Contents
 ##Introduction
