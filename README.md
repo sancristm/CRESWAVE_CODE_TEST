@@ -15,7 +15,10 @@ Features
 <br>API Endpoints
 <br>Contributing
 <br>License
+<br>
+
 Introduction
+<br>
 This project is a blogging platform that provides users with the ability to register, login, manage their profiles, create, read, update, and delete blog posts, comment on blog posts, and perform search functionality to search for blog posts by title or content. It also implements role-based access control (RBAC) where only authorized users can perform certain actions.
 
 Features
