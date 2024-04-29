@@ -43,6 +43,9 @@ This project is a blogging platform that provides users with the ability to regi
 ```bash
 git clone https://github.com/sancristm/CRESWAVE_CODE_TEST.git
 
+
+<br>
+
 2. Navigate to the project directory
 
 ```bash
