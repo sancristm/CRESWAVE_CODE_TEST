@@ -45,18 +45,41 @@ git clone https://github.com/sancristm/CRESWAVE_CODE_TEST.git
 
 2. Navigate to the project directory
 
-``` bash
+```bash
 cd CRESWAVE_CODE_TEST
 
 3. Configure your database settings in application.properties.
 
 4. Build the project
 
-``` bash
+```bash
 mvn clean package
 5. Run the Application
 ```bash
 java -jar CRESWAVE_CODE_TEST.jar
 
 
+## usage 
+Once the application is running, you can interact with the API using tools like Postman or cURL. You can register users, login, create blog posts, comment on blog posts, etc. See the API Endpoints section for details on available endpoints and their usage.
+
+## API Endpoints
+User Registration: POST /api/v1/user/register
+User Login: POST /api/v1/user/login (to be implemented)
+Blog Posts:
+GET /api/v1/blogs/: Retrieve all blog posts
+GET /api/v1/posts/{BlogpostId}: Retrieve a specific blog post by ID
+POST /api/v1/blogs: Create a new blog post
+PUT /api/v1/posts/{BlogpostId}: Update an existing blog post
+DELETE /api/v1/blogs/{BlogpostId}: Delete a blog post
+## Comments:
+GET /api/v1/comments/: Retrieve all comments
+GET /api/v1/comments/{id}: Retrieve a specific comment by ID
+POST /api/v1/comments: Create a new comment
+PUT /api/v1/comments/{id}: Update an existing comment
+DELETE /api/v1/comments/{id}: Delete a comment
+## Contributing
+Contributions are welcome! Please follow the Contribution Guidelines.
+
+## License
+This project is licensed under the MIT License.
 
