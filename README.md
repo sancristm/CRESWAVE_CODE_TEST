@@ -38,8 +38,25 @@ This project is a blogging platform that provides users with the ability to regi
 
 ## Setup
 
-1. Clone the repository:
+1. Clone the repository
 
 ```bash
 git clone https://github.com/sancristm/CRESWAVE_CODE_TEST.git
+
+2. Navigate to the project directory
+
+``` bash
+cd CRESWAVE_CODE_TEST
+
+3. Configure your database settings in application.properties.
+
+4. Build the project
+
+``` bash
+mvn clean package
+5. Run the Application
+```bash
+java -jar CRESWAVE_CODE_TEST.jar
+
+
 
